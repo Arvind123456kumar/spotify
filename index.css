@@ -1,0 +1,183 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins',sans-serif; */
+}
+body{
+    background: #0d0505;
+    /* background-image: url('bg.jpg'); */
+
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background: #535252;
+    color: #fff;
+
+}
+nav ul li{
+    padding: 0 25px;
+}
+.brand img{
+    width: 64px;
+padding: 0 8px;    
+}
+.brand{
+    display: flex;
+    align-items: center;
+font-weight: bolder;
+font-size: 1.5rem;
+}
+#newSongs{
+    min-height: 60vh;
+    background: #efe4e4;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+display:none;
+width: 70%;
+margin: 23px auto auto 15%;
+border-radius: 12px;
+padding: 34px;
+background-image: url('bg.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat; 
+}
+.container{
+    min-height: 60vh;
+    /* background: #000; */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+display:flex;
+width: 65%;
+margin: 23px auto auto 15%;
+border-radius: 12px;
+padding: 34px;
+background-image: url('./covers/8.jpg');
+background-position: cover;
+background-size: cover;
+background-repeat: no-repeat;
+/* filter: brightness(60%);  */
+}
+input{
+    background: #000;
+}
+.bottom{
+    position: sticky;
+    height: 80px;
+    background: #535252;
+
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#MyProgressBar{
+    width: 60vw;
+    height: 3px;
+    cursor: pointer;
+}
+.songItemContainer{
+ margin-top: 54px;   
+}
+
+.songItem{
+    height: 50px ;
+    display: flex;
+    background-color: #fff;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+}
+.songItem img{
+    width: 50px;
+    aspect-ratio: 1.3;
+    margin: 0 10px;
+    border-radius: 50%;
+background-color: rgb(176, 175, 175);
+border: 0.5px solid green;
+}
+.timeStamp{
+    margin: 0 10px;
+}
+.timeStamp i{
+    cursor: pointer;
+
+}
+.songInfo{
+position: absolute;
+left: 10vw;
+font-family: 'Poppins', sans-serif;
+
+}
+.songInfo img{
+ opacity: 0;
+ transition: all 0.4s ease-in;
+    }
+@media   screen and (max-width:700px){
+    *{
+        font-size: 10px;
+    }
+    .songItem img{
+        width: 30px;
+        aspect-ratio: 1.5;
+        margin: 0 8px;
+        border-radius: 50%;
+    background-color: rgb(176, 175, 175);
+    border: 0.5px solid green;
+    }
+    .songItem{
+        height: 50px ;
+        display: flex;
+        background-color: #fff;
+        width: 100%;
+        color: black;
+        margin: 12px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 7px;
+    }
+    .container{
+        min-height: 60vh;
+        /* background: #f9f6f6; */
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    display:flex;
+    width: 80%;
+    margin: 23px auto ;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./covers/8.jpg');
+    background-position: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* filter: brightness(60%);  */
+    }
+    .songInfo{
+        position: absolute;
+        left: 0vw;
+        font-family: 'Poppins', sans-serif;
+        
+        }
+}
+
